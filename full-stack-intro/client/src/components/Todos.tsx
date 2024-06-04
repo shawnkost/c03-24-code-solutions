@@ -51,9 +51,7 @@ export function Todos() {
         ...todo,
         isCompleted: !todo.isCompleted,
       });
-      setTodos([
-        ...todos.map((t) => (t.todoId === todo.todoId ? response : t)),
-      ]);
+      setTodos(todos.map((t) => (t.todoId === todo.todoId ? response : t)));
     } catch (error) {
       setError(error);
     }
