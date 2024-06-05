@@ -31,3 +31,12 @@ div#product-details {
   width: 100%;
   object-fit: cover;
 }
+
+button {
+  background-color: rgb(220, 220, 220);
+  border: none;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
