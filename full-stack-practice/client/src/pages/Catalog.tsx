@@ -1,21 +1,11 @@
 import { useEffect, useState } from 'react';
-import './Catalog.css';
 import { getProducts } from '../api/queries';
 import { Link } from 'react-router-dom';
-
-type Product = {
-  productId: number;
-  name: string;
-  price: number;
-  imageUrl: string;
-  shortDescription: string;
-  longDescription: string;
-};
+import { Product } from '../lib/types';
+import './Catalog.css';
 
 export function Catalog() {
   const [products, setProducts] = useState<Product[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<unknown>();
 
   useEffect(() => {
     async function loadData() {
@@ -24,9 +14,6 @@ export function Catalog() {
         setProducts(response);
       } catch (error) {
         console.error('Error fetching products:', error);
-        setError(error);
-      } finally {
-        setIsLoading(false);
       }
     }
     loadData();

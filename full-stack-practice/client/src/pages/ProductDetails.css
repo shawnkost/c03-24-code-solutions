@@ -3,10 +3,20 @@ div#product-details {
   border: 1px solid lightgray;
 }
 
-.row {
+.back-link {
+  display: inline-block;
+  transition: transform 0.4s ease-in-out;
+}
+
+.back-link:hover {
+  transform: translateX(-0.3rem);
+}
+
+.main-details {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .image-wrapper {
