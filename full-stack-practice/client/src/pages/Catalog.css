@@ -1,0 +1,50 @@
+div#catalog {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  margin-bottom: 2rem;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: row;
+  gap: 3rem;
+}
+
+.catalog-item {
+  border: 1px solid lightgray;
+}
+
+.product-image {
+  height: 300px;
+  background-color: rgb(220, 220, 220);
+}
+
+.product-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.product-details {
+  padding: 1rem;
+}
+
+.product-details *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.product-details h3 {
+  font-size: 1.3rem;
+}
+
+.product-details .product-price {
+  color: rgb(209, 209, 212);
+}

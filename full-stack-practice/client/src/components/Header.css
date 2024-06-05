@@ -1,0 +1,13 @@
+.header {
+  background-color: rgb(44, 49, 55);
+  color: white;
+}
+
+.header nav {
+  padding: 1rem;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 1.5rem;
+}
