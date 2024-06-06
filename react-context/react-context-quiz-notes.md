@@ -51,3 +51,5 @@ div {
   width: 100%;
 }
 ```
+
+Trivial change for pull request to be accepted
